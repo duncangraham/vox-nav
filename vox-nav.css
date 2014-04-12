@@ -1,0 +1,23 @@
+.nav-click {
+	height: 100%;
+	position: absolute;
+	min-width: 15%;
+	top:0;
+	z-index: 19;
+}
+
+.nav-click.nav-previous:hover {
+	cursor: w-resize;
+}
+
+.nav-click.nav-next {
+	right:0;
+}
+
+.nav-click.nav-next:hover {
+	cursor: e-resize;
+}
+
+.current:hover {
+	cursor: move;
+}

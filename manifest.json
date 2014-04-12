@@ -1,23 +1,18 @@
 {
   "manifest_version": 2,
 
-  "name": "Beautiful News",
+  "name": "Vox Nav. A better way to use the vox.com cards on desktop.",
   "description": "An extension to make news sites more readable",
-  "icons": { "128": "icon.png" },
-  "version": "1.1",
-  "homepage_url": "https://github.com/duncangraham/beautiful-news",
+  "icons": { "128": "voxv.png" },
+  "version": "1.0",
+  "homepage_url": "https://github.com/duncangraham/vox-nav",
   
 
   "content_scripts": [
     {
-      "matches": ["*://*.washingtonpost.com/*/*"],
-      "css": ["wapo.css"],
-      "js": ["wapo.js"],
-      "run_at": "document_end"
-    },
-    {
-      "matches": ["*://*.nytimes.com/*/*/*/*"],
-      "css": ["nyt.css"],
+      "matches": ["*://*.vox.com/cards/*"],
+      "css": ["vox-nav.css"],
+      "js": ["min.jquery.js", "hammer.min.js", "vox-nav.js"],
       "run_at": "document_end"
     }
   ]
