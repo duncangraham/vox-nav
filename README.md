@@ -1,4 +1,4 @@
-beautiful-news
-==============
+vox-nav
+=======
 
-giving news sites a beautiful reading experience
+a better way to interact with cards on vox.com
